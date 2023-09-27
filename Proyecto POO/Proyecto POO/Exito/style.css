@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background: url(../Imágenes/fondo_login.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  height: 20px;
+  background-color: rgb(253, 168, 239);
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  margin-right: 40px;
+}
+
+h2{
+  color: rgb(255, 255, 255);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Alinea los elementos horizontalmente */
+  align-items: center; /* Centra verticalmente los elementos en la barra de navegación */
+}
+
+nav ul li {
+  margin-right: 180px;
+}
+
+nav a {
+  font-weight: 1000;
+  padding-right: 8px;
+  text-decoration: none;
+  color: rgb(78, 26, 69);
+}
+
+.servicio_c{
+  color: #780498;
+  cursor: pointer;
+}
+
+.servicio_c:hover{
+  color: #390041;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    header {
+      flex-direction: column;
+    }
+  
+    nav {
+      padding: 10px 0px;
+    }
+}
+
+.container {
+    margin-left: 23%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffd9f0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.centrar-contenido {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.v-i {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6b3966;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.v-i:hover {
+    background-color: #d518b6;
+}
+
+footer {
+  background-color: rgb(253, 168, 239);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+  position: fixed; /* Establece el posicionamiento fijo */
+    bottom: 0; /* Coloca el footer en la parte inferior de la ventana */
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+}
+
+/* Estilos para el contenedor de elementos horizontales */
+.footer-elements {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+.footer-elements a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-right: 300px;    /* Espacio entre los elementos */
+  margin-top: 1%;
+  font-weight: bold;
+}
+
+/* Estilos para el último enlace en el footer (eliminar margen derecho) */
+.footer-elements a:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.footer-elements a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background: url(../Imágenes/fondo_login.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  height: 20px;
+  background-color: rgb(253, 168, 239);
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  margin-right: 40px;
+}
+
+h2{
+  color: rgb(255, 255, 255);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Alinea los elementos horizontalmente */
+  align-items: center; /* Centra verticalmente los elementos en la barra de navegación */
+}
+
+nav ul li {
+  margin-right: 180px;
+}
+
+nav a {
+  font-weight: 1000;
+  padding-right: 8px;
+  text-decoration: none;
+  color: rgb(78, 26, 69);
+}
+
+.perfil_c{
+  color: #780498;
+  cursor: pointer;
+}
+
+.perfil_c:hover{
+  color: #390041;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    header {
+      flex-direction: column;
+    }
+  
+    nav {
+      padding: 10px 0px;
+    }
+}
+
+.profile-container {
+  display: flex;
+  justify-content: 10%;
+  max-width: 1300px;
+  margin: 40px auto;
+}
+
+.profile {
+  flex-basis: 40%; 
+  background-color: hsl(294, 100%, 96%);
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-right: 50px;
+  border-radius: 5%;
+}
+
+.profile:hover {
+  background-color: rgb(253, 168, 239); /* Cambia el color de fondo al pasar el cursor */
+  transform: scale(1.05); /* Escala la tarjeta ligeramente */
+  transition: background-color 0.3s, transform 0.3s; /* Agrega una transición suave */
+}
+
+.profile img {
+  max-width: 50%;
+  border-radius: 40%;
+  margin-left: 25%;
+}
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 15px;
+}
+
+.boton{
+  width: 60%;
+  background-color: #b880b4;
+  border-radius: .7em;
+  cursor: pointer;
+  transition: background-color 1s;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+.boton:hover{
+  background-color: rgb(62, 0, 58);
+}
+
+.boton p{
+  text-align: center;
+  font-size: 30px; font-weight: bold;
+  color: rgb(255, 255, 255);
+  line-height: 1em;
+}
+
+.boton a{
+  text-decoration: none;
+}
+
+footer {
+  background-color: rgb(253, 168, 239);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos para el contenedor de elementos horizontales */
+.footer-elements {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+.footer-elements a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-right: 300px;    /* Espacio entre los elementos */
+  margin-top: 1%;
+  font-weight: bold;
+}
+
+/* Estilos para el último enlace en el footer (eliminar margen derecho) */
+.footer-elements a:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.footer-elements a:hover {
+  text-decoration: underline;
+}
+

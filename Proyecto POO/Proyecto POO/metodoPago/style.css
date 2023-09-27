@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(../Imágenes/fondo_login.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  height: 20px;
+  background-color: rgb(253, 168, 239);
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  margin-right: 40px;
+}
+
+h2{
+  color: rgb(255, 255, 255);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Alinea los elementos horizontalmente */
+  align-items: center; /* Centra verticalmente los elementos en la barra de navegación */
+}
+
+nav ul li {
+  margin-right: 150px;
+}
+
+nav a {
+  font-weight: 1000;
+  padding-right: 8px;
+  text-decoration: none;
+  color: rgb(78, 26, 69);
+}
+
+.servicio_c{
+  color: #780498;
+  cursor: pointer;
+}
+
+.servicio_c:hover{
+  color: #390041;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    padding: 10px 0px;
+  }
+}
+
+h1 {
+    margin-top: 80px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.payment-methods .li-2{
+    margin: 25px;
+    margin-left: 43%;
+}
+
+.payment-methods .paypal-link {
+    width: 20%;
+    background-color: #1e477a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.payment-methods .visa-link {
+    width: 20%;
+    background-color: #fdbb0a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.payment-methods .nequi-link {
+    width: 20%;
+    background-color: #40264d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.image-left {
+    max-width: 200px; /* Tamaño máximo de las imágenes */
+    height: auto;
+    margin-left: 15%;
+    margin-top: -1%;
+}
+
+.image-left {
+    float: left; /* Alinea la imagen a la izquierda */
+    margin-right: 10px; /* Espacio entre la imagen y el menú */
+}
+
+.image-right{
+    max-width: 200px; /* Tamaño máximo de las imágenes */
+    height: auto;
+    margin-right: 13%;
+    margin-top: -15%;
+}
+
+.image-right {
+    float: right; /* Alinea la imagen a la izquierda */
+    margin-left: 10px; /* Espacio entre la imagen y el menú */
+}
+
+a i {
+    font-size: 24px; /* Tamaño de los íconos */
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+footer {
+  background-color: rgb(253, 168, 239);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+  position: fixed; /* Establece el posicionamiento fijo */
+    bottom: 0; /* Coloca el footer en la parte inferior de la ventana */
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+}
+
+
+.footer-elements {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+.footer-elements a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-right: 300px;    /* Espacio entre los elementos */
+  margin-top: 1%;
+  font-weight: bold;
+}
+
+/* Estilos para el último enlace en el footer (eliminar margen derecho) */
+.footer-elements a:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.footer-elements a:hover {
+  text-decoration: underline;
+}
